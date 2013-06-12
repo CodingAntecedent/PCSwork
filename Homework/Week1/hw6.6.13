@@ -1,0 +1,42 @@
+Reading to do before class
+
+Chris Pine’s Learn to Program (Chapter 15)
+(Even students) Chapter 13
+(Odd students) Chapter 14
+Reading questions due before class
+
+What is a REPL? Is irb a REPL, why or why not?
+It is a read eval print loop
+it runs code you put in and gives you back a value
+irb is a repl
+wikipediat says so! and it reads, evauluates and prints value for ruby code entered
+
+Why is the PickAxe book called PickAxe?
+
+there is a picture of a pickaxe on it... maybe if you get the hardcover you can kill someone with it.
+
+Evens:
+
+How do we add methods to existing classes or modules (Reopening)
+Why would we want to reopen a class or a module?
+What is the first method called when you instanciate an object? (Constructor)
+Could you call initialize or redefine new? Why would you or wouldn’t you do that?
+What does the private keyword do?
+
+Odds:
+
+What is the difference between a Proc and a method?
+A method can call a proc
+
+Could you have defined maybe_do in some way other than using a Proc?
+yes, as a method
+
+How do you create a method that accepts a block as an argument?
+call a proc inside the method... you may have to append & to the front of the proc name
+
+When you’ve passed a block into a method, how do you call it in the method? (Yield)
+block.call
+
+Try profiling some of your code using the profile method in the book. Show me the output of the profile in a comment above the code. (Computers are fast, you may need to use sleep or a large number of iterations to make a meaninful number. Start with 10000.times do)
+
+need to see a better example, can't quite grok it
