@@ -1,3 +1,7 @@
+#know how to set up tests
+#know how to require relative
+#still shaky on properly testing once the complexity of the code increases
+
 require_relative 'rubyexam'
 require 'minitest/autorun'
 
@@ -24,3 +28,4 @@ class PunchbowlTest < MiniTest::Unit::TestCase
   #   assert_equal "cool", Punchbowl.listen("yes")
   # end
 end
+
