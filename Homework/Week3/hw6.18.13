@@ -1,0 +1,35 @@
+Reading to do before class
+
+Learning jQuery: Chapter 5
+Reading questions due before class
+
+How do you alter an a tag’s href attribute?
+('a').attr("href", "www.yourlink.com")
+
+How do you create new content and add it to the page?
+("element you want to item added inside").append()
+("element you want to item added inside").prepend()
+("element you want to item added inside").appendTo()
+
+How do you move content within the page?
+
+same as above
+
+What jQuery function do we use to iterate over all elements in a jQuery set?
+
+.each()
+
+How do you copy a DOM element? How do you copy any event listeners as well?
+
+.clone()
+
+
+What’s the difference between .text() and .html()?
+.html() treats the string as html
+.text() treats the string as text
+
+How do we remove all the content inside an element?
+.empty() removes everything inside an element
+.remove() removes everything inside and the element itself
+
+When you insert new content into the page, does it have bindings attached to it? If not, how do we make sure that existing bindings that should have targeted the new element, do?
