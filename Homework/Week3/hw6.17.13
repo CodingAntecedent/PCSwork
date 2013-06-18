@@ -1,0 +1,59 @@
+Tuesday
+Reading to do before class
+
+Learning jQuery: Chapters 3,4
+Reading questions due before class
+
+What is the most common short version of $(document).ready()?
+
+  $(function() {
+       // Our code here...
+  });
+
+What is “progressive enhancement”?
+
+  Design that allows access to basic features for those with less advanced browsers or more limited bandwidth and more advanced features for those that are not constrained.
+
+How do you bind a click event to a button?
+
+  Specify the event 'click' to the button item
+
+Inside a click handler, what is the variable this set to?
+
+  whatever is being clicked
+
+What is event bubbling?
+
+  An even that passes from its current element to its parents instead of its children.  The opposite of event capturing.
+
+How do we stop an event from bubbling up the chain?
+
+  access the event object and change the parameters
+  event.stopPropagation();
+  inside the event function
+
+How do we stop an element from taking its default action (e.g. a submit button will refresh the page or submit a form)
+
+  .preventDefault()
+  inside the event function
+
+How do we remove a binding?
+
+  call the .unbind() method on the events you need
+
+How do we hide and show elements?
+
+  .hide() on inline methods
+  .show() on matched set that was hidden
+
+How do we blur or slide elements?
+ .blur()
+ .slide()
+
+Notes:
+
+As of jQuery 1.9, several things have changed.
+
+Short names are no longer used. click, blur, etc.
+bind and live are now on. e.g. $('button').on('click', ...)
+toggle is no longer an event, so we do:
