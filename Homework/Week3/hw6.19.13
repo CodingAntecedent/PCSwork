@@ -1,0 +1,59 @@
+Thursday
+Reading to do before class
+
+Learning jQuery: Chapter 6
+
+Reading questions due before class
+____________________________________
+
+>In your own words, what is AJAX and why is it worth knowing about?
+
+Its a protocol for fetching and storing information off the page and easily calling it from a server.  It can add a lot of functionality to a site with text/html/etc that you store on the server and can call on demand for browsers that support it.
+
+>How do you download an html fragment and assign it to a variable?
+
+$(document).ready(function() {
+    $('#letter-a a').click(function() {
+      var whatever = $('#dictionary').load('a.html');
+       alert('Loaded!');
+       return false;
+  });
+});
+
+
+>What is JSON and why do we love it?
+
+simplified format for associative arrays and simple data structures
+great for moving information from a server to a web app
+
+>What function do we use to download a JSON snippet from a server?
+
+$.getJSON()  this parses the string and provides calling code for requesite object
+
+>How can we provide a function to $.getJSON which allows us to act on the data after it finishes downloading?
+
+// Unfinished code
+   $(document).ready(function() {
+     $('#letter-b a').click(function() {
+       $.getJSON('b.json', function(data) {
+       });
+       return false;
+  });
+});
+
+>What is the .val() function useful for? How does it compare to .html()?
+
+gets the current value of the first element
+
+>How do we specify an error callback for $.get?
+
+$.get('file.php', requestData, function(data) {}
+
+>What is JSONP and how do we use it to get around cross-origin policies?
+
+lets you prepend some arbitrary text as padding in front of the JSON data
+lets you retrieve info from remote server
+
+What are the drawbacks of JSONP?
+
+Browser will execute whatever the server returns.  Could be destructive or malicious.
