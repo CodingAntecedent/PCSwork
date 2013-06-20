@@ -13,9 +13,13 @@
 .span1 {
   height: 80px;
   width: 80px;
-  border: solid;
+  margin-bottom: 20px;
 }
 
 td {
   border: solid;
+}
+
+.bottom {
+  margin-bottom: 30px;
 }
