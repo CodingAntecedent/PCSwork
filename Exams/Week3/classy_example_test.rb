@@ -70,7 +70,10 @@ class BobResponseTest < MiniTest::Unit::TestCase
 
   #step 7: adding feature
   #make sure it fails - it does
+  #failed when feature added
+  #needed to move .righteous? if statement before statement? if statement
   def test_feature_add_righteous
+    #skip
     response = "Bro, that's righteous!"
     assert_equal(response, @bob.response_for("Bro"))
   end

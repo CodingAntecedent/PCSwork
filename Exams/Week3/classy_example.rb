@@ -14,10 +14,10 @@ class Bob
       'Woah, chill out!'
     elsif question?(input)
       'Sure.'
+    elsif righteous?(input)
+      'Bro, that\'s righteous!'
     elsif statement?(input)
       'Whatever.'
-    # elsif righteous?(input)
-    #   'Bro, that\'s righteous!'
     else
       'Fine, be that way.'
     end
@@ -34,10 +34,14 @@ class Bob
   def shouting?(input)
     !input.empty? && input == input.upcase
   end
-  #adding feature
+  #adding feature: righteous?
+  #we'll save regex for later, I think
   # def righteous?(input)
   #   /bro/ =~ input != 0 || /Bro/ =~ input != 0
   # end
+  def righteous?(input)
+    "bro" == input.downcase
+  end
 
 end
 
