@@ -1,4 +1,10 @@
 class Bob
+  #adding in attr_reader
+  # attr_reader(:input)
+  # def initialize
+  #   @input = input.chomp.strip
+  # end
+
   def chat(input)
     puts response_for(input)
   end
@@ -10,6 +16,8 @@ class Bob
       'Sure.'
     elsif statement?(input)
       'Whatever.'
+    # elsif righteous?(input)
+    #   'Bro, that\'s righteous!'
     else
       'Fine, be that way.'
     end
@@ -26,14 +34,23 @@ class Bob
   def shouting?(input)
     !input.empty? && input == input.upcase
   end
+  #adding feature
+  # def righteous?(input)
+  #   /bro/ =~ input != 0 || /Bro/ =~ input != 0
+  # end
+
 end
 
-if ENV["RUBY_ENV"] == "test"
-else
-  puts "Hey bro, wassup?"
-  bob = Bob.new
-  while true
-    input = gets.chomp.strip
-    bob.chat(input)
-  end
-end
+#commented out block below for initial tests
+#lack of gets.chomp.strip was a problem, but adding it back in is also a problem
+#see step five in test file
+
+# if ENV["RUBY_ENV"] == "test"
+# else
+#   puts "Hey bro, wassup?"
+#   bob = Bob.new
+#   while true
+#     input = gets.chomp.strip
+#     bob.chat(input)
+#   end
+# end
