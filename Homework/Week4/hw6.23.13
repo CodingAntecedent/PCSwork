@@ -1,0 +1,36 @@
+Monday
+Reading to do before class
+
+Intro to Jasmine
+Official docs (skim)
+Reading questions due before class
+
+When you think about testing javascript, what use cases come to mind?
+
+Just about everything really.
+
+Are they different from ruby?
+
+Similar, not sure I know enough to make a large distinction... assertequal vs. equalTo
+
+implementation seems similar on a basic level, I suspect its closer to rspec than minitest, but I haven't had a chance to use rspec yet to compare.
+
+Is jasmine a unit test framework or an integration test framework?
+
+Unit test
+
+How do you set up a basic jasmine runner? What boilerplate is needed?
+
+A describe function
+
+and a link to your spec.js in the specrunner html
+
+If it roughly corresponds with an individual test, what does describe correspond with?
+
+the class?
+
+How do you test equality?
+
+.equalTo
+
+What is the equivalent to setup/teardown?
