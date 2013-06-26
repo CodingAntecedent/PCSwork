@@ -1,0 +1,18 @@
+Wednesday
+Reading to do before class
+
+Jasmine-jquery docs
+Jasmine-fixtures docs
+Reading questions due before class
+
+What is a fixture?
+
+HTML content that can be loaded into Jasmine to be tested (a module)
+
+What is the purpose of providing a fixture as opposed to including jasmine in our website’s main layout if we want to test jQuery?
+
+Prevents us from having to load tests every time we load the page.
+
+What problem is jasmine-fixture trying to fix over jasmine-jquery?
+
+blows up less
