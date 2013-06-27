@@ -1,0 +1,28 @@
+Thursday
+Reading to do before class
+
+Jasmine official docs (esp async section)
+Jasmine async wiki
+Sinon.js docs
+Jasmine-sinon docs
+Reading questions due before class
+
+What is an asynchronous event and why is this a problem that jasmine even needs to solve?
+
+An event that doesn't resolve immediately when executed, jasmine needs to solve it because it may run all of its tests before an even is completed
+
+How do you make jasmine wait for asynchronous events to happen?
+
+waits(timeout)
+
+If you didn’t want to actually make the ajax connection, how would you prevent jQuery from actually calling out to a server?
+
+use a fake XMLHttpRequest
+
+If you didn’t actually have a server, but you wanted ajax to continue, how could you do that with Sinon.js?
+
+build a fake server
+
+How does Sinon.js differ from Jasmine’s built in spies?
+
+it can "bend" time, replace a server like a mock
