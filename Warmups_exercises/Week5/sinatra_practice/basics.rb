@@ -18,7 +18,7 @@ get '/form' do
 end
 
 post '/form' do
-  "You said #{params[:message]}"
+  "You said #{h params[:message]}"
 end
 
 # get '/frame' do

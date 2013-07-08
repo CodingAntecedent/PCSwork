@@ -1,10 +1,10 @@
-require 'basics'
+require_relative 'basics'
 require 'test/unit'
 require 'rack/test'
 
 ENV['RACK-ENV'] = 'test'
 
-class MyAppTest < Test::Unit::Testcase
+class MyAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
